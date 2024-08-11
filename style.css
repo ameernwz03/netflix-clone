@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  :root {
+    --primary-color: rgb(229, 9, 20);
+    --font-family: Verdana, Tahoma, sans-serif;
+  }
+
+  .banner-img {
+    background-image: url(assets/banner.png);
+    /* height: 102vh; */
+    background-size: cover;
+    background-position: center;
+    /* filter: brightness(80%); */
+  }
+
+  .sign-in button {
+    padding: 8px 16px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+  }
+  .header {
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 77vw;
+    margin: auto;
+    align-items: start;
+    padding-top: 28px;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    justify-content: center;
+    /* background-color: green; */
+    /* height: 90%; */
+    min-height: 90vh;
+    /* text-align: center; */
+  }
+  .first h1 {
+    font-size: 48px;
+    font-family: var(--font-family);
+  }
+  .first h3 {
+    font-size: 22px;
+    font-family: var(--font-family);
+    font-weight: 100;
+  }
+  .first p {
+    font-weight: 500;
+    font-family: var(--font-family);
+    font-size: 18px;
+  }
+  .get-start {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    height: 55px;
+    /* background: green; */
+    /* min-width: 43vw; */
+  }
+  .get-start button {
+    padding: 8px 30px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .email {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(70, 90, 126, 0.4);
+    padding: 10px 8px;
+    gap: 6px;
+    min-width: 370px;
+    border: 1px solid rgb(57, 205, 197);
+    border-radius: 5px;
+  }
+
+  .email input {
+    background: transparent;
+    border: none;
+  }
+  .email input:focus {
+    background: transparent;
+    outline: none;
+  }
+  .email p{
+      font-size: 12px;
+  }
+  .second {
+    /* height: 30vh; */
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 8px solid #575757d3;
+    border-bottom: 8px solid #575757d3;
+    padding: 55px 0px;
+  }
+  .default-text {
+    max-width: 40%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .default-text h2 {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: system-ui;
+  }
+  .default-text h5 {
+    font-size: 24px;
+    font-weight: 200;
+    font-family: sans-serif;
+    line-height: 30px;
+  }
+  .enjoy-tv {
+    display: flex;
+    position: relative;
+    top: 0;
+  }
+  .enjoy-tv img{
+      position: relative;
+      z-index: 1;
+  }
+  .enjoy-tv video {
+    position: absolute;
+    /* top: 57px; */
+    /* left: 33px; */
+    bottom: 106px;
+    width: 73%;
+    right: 80px;
+  }
+  .third {
+    /* height: 30vh; */
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top: 8px solid #575757d3; */
+    border-bottom: 8px solid #575757d3;
+    padding: 65px 0px;
+  }
+  .download-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .stranger-card {
+    display: flex;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid white;
+    padding: 0px;
+    border-radius: 10px;
+    width: 55%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .card-txt p:nth-child(2) {
+    color: #0071eb;
+  }
+  .forth {
+    /* height: 30vh; */
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-top: 8px solid #575757d3; */
+    border-bottom: 8px solid #575757d3;
+    padding: 65px 0px;
+  }
+  @media  screen and (max-width: 1225px) {
+    .first{
+        /* background-color: red; */
+        padding: 52px 24px;
+        gap: 22px;
+        text-align: center;
+    }
+    .second{
+        padding: 20px 24px;
+    }
+    .third{
+        padding: 20px 24px;
+    }
+    .forth{
+        padding: 20px 24px;
+    }
+    .default-text h2{
+        font-size: 34px;
+    }
+    .default-text h5{
+        font-size: 18px;
+    }
+    footer > p{
+        text-indent: 100px;
+    }
+  }
